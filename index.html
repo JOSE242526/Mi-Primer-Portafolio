@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <enlace rel="preconectar" href="https://fonts.googleapis.com">
         <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
         <enlace href="https: //fonts.googleapis.com/css2? familia= Roboto+Losa:peso@100;300;700 & display=swap" rel="stylesheet">
@@ -51,9 +52,9 @@
       
       <main class="main">
         <section class="home" id="home">
-          <div class="home__container container grid">
+          <div class="home__container container grid" data-aos="fade-left">
     
-            <div class="home__data">
+            <div class="home__data" data-aos="fade-left">
               <h1 class="home__title">Soy <span class="title--color">Kelvin J. Peralta</span></h1>
               <p class="home__description">Creo, diseño y desarrollo para darle el valor a tu producto.</p>
             </div>
@@ -61,7 +62,7 @@
             <div class="home__image">
               <img src="./img/6922 (1).jpg" alt="home persona" class="home__image--img">
     
-              <div class="balloon balloon--lf">
+              <div class="balloon balloon--lf" data-aos="fade-left">
                 <h2 class="balloon__title">Frontend Dev</h2>
                 <span class="balloon__subtitle">Estudiante</span>
               </div>
@@ -90,100 +91,62 @@
           </section>
       
           <section class="about" id="about">
-            <div class="about__container container">
+            <div class="about__container container" data-aos="fade-left">
               <h2 class="about__title">Acerca de mí</h2>
       
-              <div class="about__data">
+              <div class="about__data" data-aos="fade-left">
                 <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos praesentium accusamus
                   itaque nam pariatur error laudantium tempora quis suscipit maiores, iste repellendus eius amet et velit
                   ipsam, nisi assumenda. Eum.</p>
-      
-                <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, necessitatibus!
-                  Nesciunt saepe, expedita perspiciatis sed temporibus quasi nihil quia aspernatur maiores ullam et recusandae
-                  ad quidem eum consectetur illum. Velit.</p>
               </div>
       
               <div class="about__button--download">
                 <button class="about__button" type="button"><i class='bx bx-download'></i> <span>Download CV</span></button>
               </div>
             </div>
-            <div class="education__container container">
+            <div class="education__container container" data-aos="fade-left">
               <h2 class="education__title">Estudios</h2>
       
-              <div class="education__data grid">
+              <div class="education__data grid" data-aos="fade-left">
                 <div class="education__card">
-                  <div class="eduaction__img--container">
-                    <img src="assets/img/academlo.png" alt="education academlo">
-                  </div>
                   <div class="education__info">
                     <img src="./img/academlo.png" alt="">
                     <h2 class="eduaction__info--title">Academlo</h2>
                     <span class="education__info--date">2022-2023</span>
                     <p class="education__info--description">Programa full stack</p>
-                  </div>
-                </div>
-      
-              </div>
             </div>
           </section>
       
           <section class="skills" id="skills">
-            <div class="skills__container container grid">
+            <div class="skills__container container grid" data-aos="fade-left">
               <h2 class="skills__title">Mis habilidades</h2>
-      
-              <div class="skills__content">
-                <div class="skills__item">
-                  <div class="skills__icon--content">
-                    <i class='bx bx-devices skills__icon'></i>
-                  </div>
                   <div class="skills__data">
-                    <h3 class="skills__data--title">Web design</h3>
-                    <p class="skills__data--description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                  </div>
-                </div>
-        
-                <div class="skills__item">
-                  <div class="skills__icon--content">
-                    <i class='bx bxl-react skills__icon'></i>
-                  </div>
-                  <div class="skills__data">
+
                     <h3 class="skills__data--title">Frontend</h3>
                     <p class="skills__data--description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                   </div>
                 </div>
-        
-                <div class="skills__item">
+                
+                <div class="skills__item" data-aos="fade-left">
                   <div class="skills__icon--content">
                     <i class='bx bxl-nodejs skills__icon'></i>
                   </div>
-                  <div class="skills__data">
+                  <div class="skills__data" data-aos="fade-left">
                     <h3 class="skills__data--title">Backend</h3>
                     <p class="skills__data--description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                   </div>
                 </div>
-        
-                <div class="skills__item">
-                  <div class="skills__icon--content">
-                    <i class='bx bx-mobile-alt skills__icon'></i>
-                  </div>
-                  <div class="skills__data">
-                    <h3 class="skills__data--title">Mobile design</h3>
-                    <p class="skills__data--description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+
           </section>
       
-          <section class="experience" id="experience">
+          <section class="experience" id="experience" data-aos="fade-left">
             <div class="experience__container container swiper">
               <h2 class="experience__title">Experiencia</h2>
       
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-aos="fade-left">
                   <article class="experience__card">
-                    <img src="assets/img/Hootsuite.png" alt="w" class="experience__img">
-      
-                    <div class="experience__data">
+     
+                    <div class="experience__data" data-aos="fade-left">
                       <h3 class="experience__data--title">Full Stack</h3>
                       <span class="experience__data--date">1 mes</span>
                     </div>
@@ -197,7 +160,7 @@
                   </article>
                 </div>
             
-          <div class="portfolio" id="portfolio">
+          <div class="portfolio" id="portfolio" data-aos="fade-left">
             <div class="portfolio__container container">
       
               <h2 class="portfolio__title">Mi portafolio</h2>
@@ -213,12 +176,11 @@
                 </li>
       
               <div class="portfolio__projects">
-                <img class="portfolio__project ui" src="https://www.aulacreactiva.com/wp-content/uploads/2020/09/IMG-1-diseno-web.jpg" alt="Diseño">
+                <img class="portfolio__project" src="https://www.aulacreactiva.com/wp-content/uploads/2020/09/IMG-1-diseno-web.jpg" alt="Diseño">
               </div>
-            </div>
-          </div>
-      
-          <div class="contact" id="contact">
+              
+          <div class="contact" id="contact" data-aos="fade-up"
+          data-aos-anchor-placement="center-center">
             <div class="contact__container container">
               <h2 class="contact__title">Contacto</h2>
       
@@ -228,17 +190,28 @@
                     <div class="contact__info">
                       <i class='bx bx-phone contact__info--icon' ></i>
                       <div>
-                        <h3 class="contact__info--title">Número</h3>
-                        <span class="contact__info--subtitle">3174860016</span>
-                        <h3 class="contact__info--title">Correo</h3>
-                        <span class="contact__info--subtitle">kjpa1315@gmail.com</span>
+
                       </div>
                     </div>
                   </div>
             </div>
-          </div>
+          </head>
+          <body class="contactBody">
+                  <div class="wrapper">
+                  <div class="title">
+                  </div>
+                  <form class="form">
+                    <input type="text" class="name entry " placeholder="Your Name"/>
+                    <input type="text" class="email entry" placeholder="Email"/>
+                    <textarea class="message entry" placeholder="Message"></textarea>
+                    <button class="submit entry" onclick="thanks()">Submit</button>
+                  </form>
+                  <div class="shadow"></div>
+                </div>
+              <script src="app.js"></script>
+          </div>        
         </main>
-      
+    
         <footer class="footer">
           <div class="footer__container container">
             <p class="footer__copy">
@@ -247,8 +220,13 @@
           </div>
         </footer>
       </body>
-      
-      </html>
-    
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+      </html>  
+
 </body>
 </html>
