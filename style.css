@@ -14,7 +14,6 @@
 --z-fixed: 100;
 }
 
-
 @media screen and (min-width: 1024px) {
     :root {
       --biggest-font-size: 4rem;
@@ -112,12 +111,16 @@ body {
   }
 
    .contactBody {
-    background-color: white;
+    background-color: rgb(7, 6, 6);
     background-size: cover;
     background-attachment: fixed;
-    height:700px;
-    
+    height:700px;    
 }
+
+.contact__container {
+  max-width: 100vw;
+}
+
 .title{
     margin: 0 auto;
     width: 10%;
@@ -129,122 +132,8 @@ body {
   #title-Tag-Line{
       font-size: 20px;
   }
-/* This will center the form */
-  .wrapper {
-    width: 200;
-    height: 100%;
-    margin: 0 auto;
-  }
-/* form animation starts */
-  .form {
-    background: #EBEBEB;
-    text-align: center;
-    box-shadow: 0px 0px 20px 5px #AAA;
-    border-radius: 100px;
-    width: 80%;
-    height: 400px;
-    margin: 0;
-    padding: 40px 300px;
-    animation: bounce 1.5s infinite;
-  }
-.name {
-    background-color: #F2F1F3;
-    border-bottom: 5px solid #EBC310;
-    color: black;
-    width:300px;
-  }
-  ::-webkit-input-placeholder{
-      color: rgb(11, 11, 11);
-      font-size: 20px;
-  }
-  .name:hover{
-    background-color: #F2F1F3;
-    border-bottom: 5px solid #EF9919;
-    height:30px;
-    width:400px;
-  }
-  .email {
-    background-color: #F2F1F3;
-    border-bottom: 5px solid #EF9919;
-    height:50px;
-    width:300px;
-  }
-  .email:hover{
-    background-color: #F2F1F3;
-    border-bottom: 5px solid #EF9919;
-    height:30px;
-    width:380px;
-  }
-  .message {
-    background-color: #F2F1F3;
-    border-bottom: 5px solid rgb(195, 35, 17);
-    overflow: hidden;
-    height: 100px;
-    width:300px;
-  }
-  .message:hover{
-    background-color: #F2F1F3;
-    border-bottom: 5px solid #EF9919;
-    height: 100px;
-    width:370px;
-  }
-  .submit{
-    border-radius:5px;
-    padding:10px;
-    background-color: #F2F1F3;
-    border: none;
-    border-bottom: 5px solid #EF9919;
-    transform: translateY(-120px);
-  }
-  .submit:hover{
-    border-bottom: #EF9919;
-    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
-  }
-  .entry{
-    display: block;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    transition: all 0.5s ease 0s;
-    box-shadow: 0px 0px 60px 5px #e2e2e1a7;
-  }
-  /* Shadow to make it look like form is floating  */
-  .shadow{
-    box-shadow: 0px 0px 60px 5px #AAA;
-    opacity: 0.5;
-    border-radius: 100px;
-    width: 100%;
-    margin: 50px auto 0 auto;
-    padding: 0 20px;
-    animation: shadow 1.5s infinite;
-  }
-.submit{
-    border: 10px;
-    padding:10px;
-    width:120px;
-    color: white;
-    background-color: #EF9919;
-    border: none;
-    border-bottom: 5px solid #EF9919;
-    margin-top: 180px;
-  }
-  @keyframes bounce{
-    0%{
-    }
-    50%{
-      transform: translate(0, 8px);
-    }
-  }
-  @keyframes shadow{
-    0%{
-    }
-    50%{
-      opacity: 0.8;
-      width: 100%;
-    }
-  }
-  
+
+ 
 @media screen and (max-width: 750px) {
     .nav__menu {
       position: fixed;
@@ -505,7 +394,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10%;
   }
   
   .skills__icon {
@@ -587,30 +475,11 @@ body {
     row-gap: 1rem;
     align-content: center;
   }
-  
+
   .contact__container {
-    align-self: center;
-  }
-  .contact__title {
-    text-align: center;  
+    max-width: 100vw;
   }
   
-  .contact__content {
-    align-items: center;
-    row-gap: 1rem;
-  }
-  
-  .contact__data {
-    row-gap: 16rem;
-  }
-  
-  .contact__info {
-    display: flex;
-    column-gap: 16rem;
-    
-  }
-
-
   .footer {
     background-color: var(--first-color);
   }
@@ -672,18 +541,19 @@ body {
     .experience__data--date {
       font-size: .75rem;
     }
-  
-    .contact__data {
-      row-gap: 2rem;
-      
-    }
-  
-    .contact__info--icon {
-      padding: 15px;
-      font-size: 1.5rem;
-    }
+
+  .contact__container {
+    max-width: 80vw;
   }
   
+   
+  }
+  @media screen and (max-width: 576px) {
+    .contact__container {
+      max-width: 90vw;
+    }
+  }
+
   @media screen and (min-width: 576px) {
     .education__data {
       grid-template-columns: 1fr;
@@ -708,6 +578,11 @@ body {
       grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
     }
+
+    .contact__container {
+      max-width: 90vw;
+    }
+
   }
   
 
@@ -769,7 +644,39 @@ body {
     .home__social {
       order: 3;
     }
-  
 
+    .contact__container {
+      max-width: 90vw;
+    }
+    
   }
   
+  .contact__container {
+    display: block;
+    width: 700px;
+    height: 350px;
+    background-size: 100vw 100vw;
+    background-attachment: fixed;
+    margin: 0;
+    background-color: darkgray;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    margin-top: 200px;
+    border-radius: 20px;
+   
+  }
+
+  input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+  }
+
+  textarea {
+    min-width: 100px;
+    max-height: 200px;
+    max-width: 100%;
+  }

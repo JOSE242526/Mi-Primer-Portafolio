@@ -179,38 +179,21 @@
                 <img class="portfolio__project" src="https://www.aulacreactiva.com/wp-content/uploads/2020/09/IMG-1-diseno-web.jpg" alt="Diseño">
               </div>
               
-          <div class="contact" id="contact" data-aos="fade-up"
-          data-aos-anchor-placement="center-center">
+          <div class="contact" id="contact">
             <div class="contact__container container">
               <h2 class="contact__title">Contacto</h2>
-      
-              <div class="contact__content grid">
-                <div class="contact__data grid">
-                  <div>
-                    <div class="contact__info">
-                      <i class='bx bx-phone contact__info--icon' ></i>
-                      <div>
-
-                      </div>
-                    </div>
-                  </div>
+              <form>
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" name="nombre" placeholder="Nombre completo">
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" placeholder="ejemplo@email.com">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Danos tu mensaje"></textarea>
+                <input type="button" value="ENVIAR" id="boton">
+          </form>
             </div>
-          </head>
-          <body class="contactBody">
-                  <div class="wrapper">
-                  <div class="title">
-                  </div>
-                  <form class="form">
-                    <input type="text" class="name entry " placeholder="Your Name"/>
-                    <input type="text" class="email entry" placeholder="Email"/>
-                    <textarea class="message entry" placeholder="Message"></textarea>
-                    <button class="submit entry" onclick="thanks()">Submit</button>
-                  </form>
-                  <div class="shadow"></div>
-                </div>
-              <script src="app.js"></script>
-          </div>        
-        </main>
+          
+          </main>
     
         <footer class="footer">
           <div class="footer__container container">
@@ -220,12 +203,11 @@
           </div>
         </footer>
       </body>
-
+      
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
         AOS.init();
       </script>
-
       </html>  
 
 </body>
